@@ -156,6 +156,13 @@ export default function Home() {
               </TabPanel>
             </TabPanels>
           </Tabs>
+          <Link
+            href="https://www.google.com/maps/search/farmacias+cerca+de+mi+ubicacion"
+            target="_blank"
+            isExternal
+          >
+            Buscar Farmacias Cercanas
+          </Link>
         </Box>
       </Layout>
     </>
