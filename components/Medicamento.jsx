@@ -35,12 +35,12 @@ const Medicamento = ({
       backgroundColor="gray.100"
       justifyContent="space-between"
       flexDirection="row"
-      p={2}
+      p={7}
       alignItems="center"
       rounded="md"
     >
-      <Box display="flex" alignItems="center" gap={2} width="70%">
-        <Stack gap={2} fontFamily="Dosis">
+      <Box display="flex" alignItems="center" gap={3} width="70%">
+        <Stack gap={5} fontFamily="Dosis">
           <Text fontWeight="bold" fontSize={{ base: "sm", md: "md" }}>
             {nombre}
           </Text>
@@ -57,13 +57,13 @@ const Medicamento = ({
         display="flex"
         justifyContent="space-around"
         alignItems="center"
-        width="30%"
+        width="100%"
         gap={{ base: "2" }}
       >
         <Button
           onClick={onOpen}
           colorScheme="teal"
-          size="sm"
+          size="xl"
           leftIcon={<FontAwesomeIcon icon={editPen} />}
         >
           Editar
@@ -72,7 +72,7 @@ const Medicamento = ({
         <Button
           onClick={eliminarMedicamento}
           colorScheme="red"
-          size="sm"
+          size="xl"
           leftIcon={<FontAwesomeIcon icon={trash} />}
         >
           Eliminar

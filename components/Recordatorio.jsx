@@ -27,7 +27,7 @@ export const Recordatorio = ({ nombreMedicamento }) => {
         fetch("http://localhost:3001/api/send-email", {
           method: "POST",
           body: JSON.stringify({
-            message: "Recordatorio!",
+            message: "Recordatorio para tomar medicamento: http://localhost:3000/recordatorioMed",
           }),
           headers: { "Content-Type": "application/json" },
         });
@@ -39,7 +39,7 @@ export const Recordatorio = ({ nombreMedicamento }) => {
 
   return (
     <>
-      <Button onClick={onOpen} colorScheme="teal" size="sm">
+      <Button onClick={onOpen} colorScheme="teal" size="xl">
         Recordatorio
       </Button>
       {isOpen ? (
