@@ -11,6 +11,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { editPen } from "../components/images/editPen.svg";
 import { trash } from "../components/images/trash.svg";
 import EditFormMedicamento from "../components/EditFromMedicamento";
+import { Recordatorio } from "./Recordatorio";
 
 const Medicamento = ({
   key,
@@ -76,6 +77,7 @@ const Medicamento = ({
         >
           Eliminar
         </Button>
+        <Recordatorio nombreMedicamento={nombre} />
       </Box>
 
       {isOpen ? (
