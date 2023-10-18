@@ -11,8 +11,8 @@ app.use(cors());
 const transporter = nodemailer.createTransport({
   service: "hotmail",
   auth: {
-    user: "bolialcuadrado@hotmail.com",
-    pass: "BoliBoliBoli",
+    user: "TuBienestar@hotmail.com",
+    pass: "TuBienestar",
   },
 });
 
@@ -20,7 +20,7 @@ app.post("/api/send-email", (req, res) => {
   const { to, message } = req.body;
 
   const mailOptions = {
-    from: "bolialcuadrado@hotmail.com",
+    from: "TuBienestar911@hotmail.com",
     to: "gianluccacipriani@gmail.com",
     subject: "Recordatorio programado",
     text: message,
